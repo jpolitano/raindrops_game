@@ -5,8 +5,8 @@ class rain_class
   
   rain_class(float x, float y)// x and Y values for location
   {
-    PVector loc = new PVector(x,y);// make location x and y
-    PVector spe = new PVector(4,4);// sets speed of falling raindops
+    loc = new PVector(x,y);// make location x and y
+    spe = new PVector(4,4);// sets speed of falling raindops
     d=20; //diameter = 20
   }
   
