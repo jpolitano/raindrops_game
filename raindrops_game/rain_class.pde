@@ -2,6 +2,7 @@ class rain_class
 {
   PVector loc,spe;//location
   float d;//diameter
+  int x,y;// x and y integers
   
   rain_class(float x, float y)// x and Y values for location
   {
@@ -13,6 +14,8 @@ class rain_class
   void display()// function to display
   {
     ellipse(loc.x,loc.y,d,d);// draw rain
+    loc.x = x;// set the x location to integer x location
+    loc.y = y;// set the y location to integer y locaion
   }
   
   void fall()// function to fall
