@@ -10,7 +10,7 @@ class catcher
 
   boolean catching(int i)//tests if raindrops are above/nearby, returns true or false
   {
-    if (loc.x- rain[i].x<25 && loc.y- rain [i].y < 10)// if rain touches catcher
+    if (loc.x- rain[i].xs<25 && loc.y- rain [i].ys < 10)// if rain touches catcher
     {
       return (true);// return that it touches the catcher
     }

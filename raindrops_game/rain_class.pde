@@ -2,24 +2,24 @@ class rain_class
 {
   PVector loc,spe;//location
   float d;//diameter
-  int x,y;// x and y integers
+  float xs,ys;// x and y floats for access
   
-  rain_class(float x, float y)// x and Y values for location
+  rain_class(float x,float y)// x and Y values for location
   {
-    loc = new PVector(x,y);// make location x and y
+    loc = new PVector(x,0);// make location x and y
     spe = new PVector(4,4);// sets speed of falling raindops
-    d=20; //diameter = 20
+    d=10; //diameter = 20
   }
   
   void display()// function to display
   {
     ellipse(loc.x,loc.y,d,d);// draw rain
-    loc.x = x;// set the x location to integer x location
-    loc.y = y;// set the y location to integer y locaion
+    xs= loc.x;// set the x location to integer x location
+    ys= loc.y;// set the y location to integer y locaion
   }
   
   void fall()// function to fall
   {
-    loc.add(spe);
+    loc.y+=2;
   }
 }
